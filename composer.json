@@ -1,0 +1,28 @@
+{
+  "name": "sourcebroker/deployer-typo3-ci",
+  "description": "CI for TYPO3 with Deployer",
+  "license": "MIT",
+  "keywords": [
+    "TYPO3",
+    "deployer",
+    "CI"
+  ],
+  "authors": [
+    {
+      "name": "Krystian Szymukowicz",
+      "email": "k.szymukowicz@gmail.com"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^12.4 || ^13.4",
+    "deployer/deployer": "~7.0 || dev-master",
+    "sourcebroker/deployer-loader": "^4 || dev-master",
+    "sourcebroker/deployer-extended": "dev-master",
+    "helhum/typo3-console": "^8 || dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "SourceBroker\\DeployerTypo3Ci\\": "src/"
+    }
+  }
+}
