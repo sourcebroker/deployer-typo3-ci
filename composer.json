@@ -17,12 +17,24 @@
     "typo3/cms-core": "^12.4 || ^13.4",
     "deployer/deployer": "~7.0 || dev-master",
     "sourcebroker/deployer-loader": "^4 || dev-master",
-    "sourcebroker/deployer-extended": "^19 || dev-master",
+    "sourcebroker/deployer-extended": "^20 || dev-master",
     "helhum/typo3-console": "^8 || dev-master"
   },
   "autoload": {
     "psr-4": {
       "SourceBroker\\DeployerTypo3Ci\\": "src/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/cms-composer-installers": true,
+      "typo3/class-alias-loader": true
     }
   }
 }
